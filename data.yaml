@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 2
+names: ['Notes', 'dimension']
+
+roboflow:
+  workspace: engineering-drawing-qrlfu
+  project: eng-drawing-ukrvj
+  version: 6
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/engineering-drawing-qrlfu/eng-drawing-ukrvj/dataset/6
