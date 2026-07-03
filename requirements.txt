@@ -1,0 +1,33 @@
+# ============================================
+# AI-Powered CAD Comparison Tool - Dependencies
+# ============================================
+
+# --- Core Image Processing ---
+opencv-python-headless>=4.8.0
+Pillow>=10.0.0
+scikit-image>=0.21.0
+
+# --- PDF Handling ---
+pdf2image>=1.16.0
+
+# --- Object Detection (YOLOv8) ---
+ultralytics>=8.2.0
+
+# --- OCR ---
+paddlepaddle-gpu>=2.6.0
+paddleocr>=2.7.0
+
+# --- Element Matching ---
+scipy>=1.11.0
+rapidfuzz>=3.0.0
+
+# --- Visualization ---
+matplotlib>=3.7.0
+
+# --- Web Interface ---
+streamlit>=1.30.0
+
+# --- Utilities ---
+numpy>=1.24.0
+PyYAML>=6.0
+tqdm>=4.65.0

@@ -1,6 +1,6 @@
-train: ../train/images
-val: ../valid/images
-test: ../test/images
+train: /home/anushwathi/cad/train/images
+val: /home/anushwathi/cad/valid/images
+test: /home/anushwathi/cad/test/images
 
 nc: 2
 names: ['Notes', 'dimension']
