@@ -288,6 +288,16 @@ def align_images(img_ref: np.ndarray, img_cmp: np.ndarray,
 
     inliers = int(mask.sum()) if mask is not None else 0
     print(f"[align] Homography inliers: {inliers}/{num_good}")
+    
+    if inliers < 50:
+        print(f"[align] Too few inliers ({inliers} < 50) — skipping alignment to prevent distortion.")
+        return {
+            'aligned_img': img_cmp.copy(),
+            'aligned_gray': gray_cmp.copy(),
+            'homography': None,
+            'num_matches': num_good,
+            'aligned': False,
+        }
 
     # Warp comparison image to align with reference
     h, w = img_ref.shape[:2]
